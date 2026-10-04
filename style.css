@@ -1,11 +1,16 @@
 .frame {
+  --glass-border: rgba(255, 255, 255, 0.68);
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   padding: 20px 24px;
-  background-color: #ffffff;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 15% 15%, rgba(106, 177, 255, 0.58), transparent 38%),
+    radial-gradient(ellipse at 88% 82%, rgba(172, 133, 255, 0.5), transparent 36%),
+    linear-gradient(135deg, #dceeff 0%, #edf2ff 48%, #e5e9f8 100%);
 }
 
 .card {
@@ -21,8 +26,12 @@
 
 .card .rectangle {
   inset: 0;
-  background-color: #e6e7e7;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.67), rgba(255, 255, 255, 0.34));
+  border: 1px solid var(--glass-border);
   border-radius: 5.5cqw;
+  box-shadow: 0 24px 70px rgba(48, 69, 112, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(22px) saturate(145%);
+  backdrop-filter: blur(22px) saturate(145%);
 }
 
 .card .vector {
@@ -161,9 +170,11 @@
 
 .card .group-2 {
   top: 83.5%;
-  left: 7.45%;
+  left: 4.24%;
+  width: 19.02%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.2cqw;
 }
 
@@ -198,7 +209,13 @@
   left: 4.24%;
   width: 19.02%;
   height: 45.59%;
-  background-color: #d9d9d9;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.54), rgba(218, 231, 249, 0.28));
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  border-radius: 2.4cqw;
+  object-fit: cover;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 10px 28px rgba(55, 76, 118, 0.08);
+  -webkit-backdrop-filter: blur(16px) saturate(135%);
+  backdrop-filter: blur(16px) saturate(135%);
 }
 
 @media (max-width: 560px) {
