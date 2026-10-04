@@ -1,213 +1,209 @@
 .frame {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px 24px;
   background-color: #ffffff;
-  width: 100%;
-  min-width: 1920px;
-  min-height: 1080px;
+}
+
+.card {
   position: relative;
+  width: min(1427px, 100%);
+  aspect-ratio: 1427 / 834;
+  container-type: inline-size;
 }
 
-.frame .rectangle {
+.card > * {
   position: absolute;
-  top: calc(50.00% - 411px);
-  left: calc(50.00% - 713px);
-  width: 1427px;
-  height: 834px;
+}
+
+.card .rectangle {
+  inset: 0;
   background-color: #e6e7e7;
-  border-radius: 60px;
+  border-radius: 5.5cqw;
 }
 
-.frame .vector {
-  position: absolute;
-  height: 65.93%;
-  top: 34.07%;
-  left: calc(50.00% - 651px);
-  width: 1303px;
+.card .vector {
+  top: 28.63%;
+  left: 4.24%;
+  width: 91.39%;
+  height: auto;
 }
 
-.frame .group {
-  position: absolute;
-  top: 187px;
-  left: 309px;
-  width: 701px;
-  height: 155px;
+.card .group {
+  top: 6.83%;
+  left: 4.24%;
+  width: 49.23%;
+  height: auto;
 }
 
-.frame .text-wrapper {
-  position: absolute;
-  top: 414px;
-  left: 651px;
+.card .text-wrapper,
+.card .text-wrapper-3,
+.card .p,
+.card .text-wrapper-6 {
   font-family: "Lato-MediumItalic", Helvetica;
   font-weight: 500;
   font-style: italic;
+}
+
+.card .text-wrapper {
+  top: 34.8%;
+  left: 28.28%;
   color: #434344;
-  font-size: 29px;
+  font-size: 2.03cqw;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.frame .div {
-  position: absolute;
-  top: 470px;
-  left: 651px;
-  font-family: "Linh AvantGarde-Bold", Helvetica;
-  font-weight: 700;
+.card .div {
+  top: 41.2%;
+  left: 28.28%;
   color: #434344;
-  font-size: 54px;
+  font-family: "Linh AvantGarde-Bold", Helvetica;
+  font-size: 3.78cqw;
+  font-weight: 700;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
-.frame .TH-SINH-VI-n-student {
-  position: absolute;
-  top: 648px;
-  left: 1388px;
-  transform: rotate(90deg);
+.card .TH-SINH-VI-n-student {
+  top: 38.5%;
+  right: 4.2%;
+  margin: 0;
+  color: #434344;
   font-family: "Linh AvantGarde-Bold", Helvetica;
+  font-size: 2.1cqw;
   font-weight: 400;
-  color: #434344;
-  font-size: 30px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  writing-mode: vertical-rl;
 }
 
-.frame .span {
+.card .span {
   font-weight: 700;
 }
 
-.frame .text-wrapper-2 {
+.card .text-wrapper-2 {
   font-family: "Linh AvantGarde-Regular", Helvetica;
 }
 
-.frame .text-wrapper-3 {
-  position: absolute;
-  top: 535px;
-  left: 651px;
-  font-family: "Lato-MediumItalic", Helvetica;
-  font-weight: 500;
-  font-style: italic;
+.card .text-wrapper-3 {
+  top: 49.75%;
+  left: 28.28%;
   color: #434344;
-  font-size: 29px;
+  font-size: 2.03cqw;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.frame .p {
-  position: absolute;
-  top: 823px;
-  left: 651px;
-  font-family: "Lato-MediumItalic", Helvetica;
-  font-weight: 500;
-  font-style: italic;
+.card .text-wrapper-4 {
+  top: 54.85%;
+  left: 28.28%;
   color: #434344;
-  font-size: 29px;
+  font-family: "Linh AvantGarde-Regular", Helvetica;
+  font-size: 2.94cqw;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
+  white-space: nowrap;
 }
 
-.frame .CTTT-truy-n-th-ng-s {
-  position: absolute;
-  top: 650px;
-  left: 651px;
+.card .CTTT-truy-n-th-ng-s {
+  top: 63.85%;
+  left: 28.28%;
+  margin: 0;
+  color: #434344;
   font-family: "Lato-Bold", Helvetica;
+  font-size: 2.8cqw;
   font-weight: 700;
-  color: #434344;
-  font-size: 40px;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.frame .text-wrapper-4 {
-  position: absolute;
-  top: 579px;
-  left: 651px;
-  font-family: "Linh AvantGarde-Regular", Helvetica;
-  font-weight: 400;
+.card .digital {
+  top: 75.75%;
+  left: 28.28%;
+  margin: 0;
   color: #434344;
-  font-size: 42px;
+  font-family: "Lato-Bold", Helvetica;
+  font-size: 2.1cqw;
+  font-weight: 700;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
-.frame .text-wrapper-5 {
-  position: absolute;
-  top: 868px;
-  left: 651px;
+.card .p {
+  top: 84.0%;
+  left: 28.28%;
+  margin: 0;
+  color: #434344;
+  font-size: 2.03cqw;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.card .text-wrapper-5 {
+  top: 89.2%;
+  left: 28.28%;
+  color: #434344;
   font-family: "Linh AvantGarde-DemiBold", Helvetica;
+  font-size: 3.15cqw;
   font-weight: 700;
-  color: #434344;
-  font-size: 45px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
-.frame .digital {
-  position: absolute;
-  top: 752px;
-  left: 651px;
-  font-family: "Lato-Bold", Helvetica;
-  font-weight: 700;
-  color: #434344;
-  font-size: 30px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.frame .group-2 {
-  position: absolute;
-  top: 823px;
-  left: 354px;
-  width: 184px;
-  height: 86px;
+.card .group-2 {
+  top: 83.5%;
+  left: 7.45%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1.2cqw;
 }
 
-.frame .text-wrapper-6 {
-  margin-left: 2px;
-  width: 175px;
-  height: 35px;
-  font-family: "Lato-MediumItalic", Helvetica;
-  font-weight: 500;
-  font-style: italic;
+.card .text-wrapper-6 {
   color: #434344;
-  font-size: 29px;
-  text-align: center;
+  font-size: 2.03cqw;
   letter-spacing: 0;
   line-height: normal;
+  text-align: center;
 }
 
-.frame .text-wrapper-7 {
-  width: 180px;
-  height: 41px;
+.card .text-wrapper-7 {
+  color: #434344;
   font-family: "Linh AvantGarde-DemiBold", Helvetica;
+  font-size: 3.15cqw;
   font-weight: 700;
-  color: #434344;
-  font-size: 45px;
-  text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  text-align: center;
   white-space: nowrap;
 }
 
-.frame .clip-path-group {
-  position: absolute;
-  width: 23.85%;
-  height: 82.41%;
-  top: 17.59%;
-  left: 76.15%;
+.card .clip-path-group {
+  top: 7.27%;
+  right: 4.24%;
+  width: 10.41%;
+  height: auto;
 }
 
-.frame .rectangle-2 {
-  position: absolute;
-  top: 408px;
-  left: 309px;
-  width: 270px;
-  height: 379px;
+.card .rectangle-2 {
+  top: 33.48%;
+  left: 4.24%;
+  width: 19.02%;
+  height: 45.59%;
   background-color: #d9d9d9;
+}
+
+@media (max-width: 560px) {
+  .frame {
+    align-items: flex-start;
+    padding: 12px;
+  }
 }
